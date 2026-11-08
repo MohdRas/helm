@@ -55,6 +55,25 @@ helm install my-release my-chart --namespace my-namespace
 [arguments]: my-release, my-chart
 
 helm search repo wordpress | grep bitnami
+helm install nginx-release bitnami/nginx --version 7.1.0
+kubectl get pods
+kubectl describe pod <pod-name>
+
+helm upgrade nginx-release bitnami/nginx
+kubectl get pod
+kubectl describe pod <pod-name>
+
+helm list
+helm history <release-name>
+helm history nginx-release
+
+helm rollback <release-name> <revision-number> - it create a new revision, can be seen using helm history <release-name>
+helm rollback nginx-release 2
+
+chart version to 18.3.6
+image version to 1.27.4
+ helm upgrade nginx-release bitnami/nginx --version 18.3.6 --set image.tag=1.27.4 --namespace default 
+--atomic
 
 
 environment settings
