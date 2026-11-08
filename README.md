@@ -54,6 +54,8 @@ helm install my-release my-chart --namespace my-namespace
 [options]: --namespace my-namespace
 [arguments]: my-release, my-chart
 
+helm search repo wordpress | grep bitnami
+
 
 environment settings
 controlplane ~ ➜  helm env
