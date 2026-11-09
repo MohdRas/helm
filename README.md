@@ -18,6 +18,7 @@ Chart = blueprint/template
 Release = deployed, live instance of that blueprint in Kubernetes
 
 
+
 For Releases (managing deployed apps):
 helm install release-name chart-name: Deploys a new chart as a release into Kubernetes, creating resources.
 helm list: Lists all current Helm releases in the specified namespace.
