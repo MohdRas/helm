@@ -76,6 +76,12 @@ image version to 1.27.4
  helm upgrade nginx-release bitnami/nginx --version 18.3.6 --set image.tag=1.27.4 --namespace default 
 --atomic
 
+helm create <chart-name>
+controlplane ~ ➜  helm create my-nginx
+Creating my-nginx
+ls
+
+
 
 environment settings
 controlplane ~ ➜  helm env
